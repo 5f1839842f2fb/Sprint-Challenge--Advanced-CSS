@@ -28,7 +28,7 @@
       border-radius: 20px;
       height: 100%;
     }
-    @media screen and (max-width: 500px) {
+    @media @phone {
       #sky {
         display: none;
       }
@@ -74,10 +74,9 @@
       button {
         .button-mixin(11rem, 4rem);
 
-        @media screen and (max-width: 500px) {
+        @media @phone {
           .button-mixin(100%, 6rem);
         }
-        
       }
     }
 
@@ -91,7 +90,7 @@
         border-radius: 10px;
       }
     }
-    @media screen and (max-width: 500px) {
+    @media @phone {
       flex-direction: column;
       align-items: center;
       margin: 0;

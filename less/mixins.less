@@ -12,5 +12,19 @@
         font-weight: bold;
         color: @porcelain;
         text-decoration: none;
-      }
+    }
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+        border: 1px solid @btn-bg-color;
+        
+        a, a:visited {
+            color: @btn-bg-color;
+        }
+    }
+}
+.pointless-flex-mixin(@direction) {
+    display: flex;
+    flex-direction: row;
+    flex-direction: @direction;
 }
