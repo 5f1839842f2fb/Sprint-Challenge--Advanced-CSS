@@ -57,7 +57,20 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      button {
+        background-color: @btn-bg-color;
+        border: none;
+        border-radius: 7px;
+        height: 4rem;
+        width: 11rem;
+        
+        a, a:visited {
+          font-size: 1.8rem;
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: bold;
+          color: @porcelain;
+          text-decoration: none;
+        }
       }
     }
 
@@ -70,6 +83,17 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+  }
+  footer {
+    background-color: @footer-background;
+    padding: 3% 0;
+    border: 2px solid @sea-shell;
+    border-radius: 15px;
+    p {
+    
+      color: @footer-font-color;
+      text-align: center;
     }
   }
 }// home
