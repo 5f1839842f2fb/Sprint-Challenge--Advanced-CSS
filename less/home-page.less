@@ -72,23 +72,12 @@
       }
 
       button {
-        background-color: @btn-bg-color;
-        border: none;
-        border-radius: 7px;
-        height: 4rem;
-        width: 11rem;
+        .button-mixin(11rem, 4rem);
 
         @media screen and (max-width: 500px) {
-          width: 100%;
-          height: 6rem;
+          .button-mixin(100%, 6rem);
         }
-        a, a:visited {
-          font-size: 1.8rem;
-          font-family: 'Ubuntu', sans-serif;
-          font-weight: bold;
-          color: @porcelain;
-          text-decoration: none;
-        }
+        
       }
     }
 
