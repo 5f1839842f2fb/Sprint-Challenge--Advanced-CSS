@@ -1,1 +1,29 @@
 // Navigation code here
+@import "variables.less";
+
+.navigation {
+    .pointless-flex-mixin(column);
+    align-items: center;
+    padding: 1% 0;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        width: 40rem;
+        justify-content: space-between;
+
+        a, a:visited {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: @nav-font;
+            font-weight: bold;
+        }
+    }
+}
